@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
+    <div class="login-logo">
+        <h1 class="color-rojo" th:text="${titulo}"></h1>
+    </div><!-- /.login-logo -->
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+    <div class="login-logo">
+        <!-- /.arriba del logo fuera del cuadro -->
+    </div><!-- /.login-logo -->
+
+    <div class="login-box-body">
+        <img th:src="@{/images/spring.png}"></img>
+        <form action="../../index2.html" method="post">
+            <div class="form-group has-feedback">
+                <p>Email</p>
+                <input type="email" class="form-control" placeholder="Email">
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div><br>
+            <div class="form-group has-feedback">
+                <p>Password</p>
+                <input type="password" class="form-control" placeholder="Password">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div><br>
+            <div class="row">
+                <div>
+                    <!--<button type="submit" class="btn btn-primary btn-block btn-flat">Conectarse</button>-->
+                    <td><input type="submit" value="Crear Cliente" class="btn btn-primary"/></td>
+                </div><!-- /.col -->
+            </div>
+        </form>
+        <br>
+        <a th:href="@{/form}" class="text-center">Registrarse</a>
+    </div><!-- /.login-box-body -->
+</div><!-- /.login-box -->
+</body>
+</html>
