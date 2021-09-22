@@ -16,7 +16,7 @@
             <a th:href="@{/index}" class="text-right text-white">Desconectarse</a>
         </nav>
         <div class="aler alert-success" th:if="${success != null}" th:text="${success}"></div>
-        <div class="aler alert-danger" th:if="${error != null}" th:text="${/error}"></div>
+        <div class="aler alert-danger" th:if="${error != null}" th:text="${error}"></div>
         <div class="aler alert-warning" th:if="${warning != null}" th:text="${warning}"></div>
         <div class="aler alert-info" th:if="${info != null}" th:text="${info}"></div>
 
