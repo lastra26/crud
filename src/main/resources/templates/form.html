@@ -9,13 +9,14 @@
 <body>
 <!-- inicia encabezado para editar links para redireccion-->
 <header>
-    <th:block th:include="fragments/layout :: header"></th:block>
+    <th:block th:include="fragments/head :: head"></th:block>
 </header>
 <!-- termina encabezado para editar links para redireccion-->
 <div class="container">
     <div class="card" >
         <div class="card-header" th:text="${titulo}"></div>
         <div class="card-body">
+
 <div th:object="${cliente}" th:remove="tag">
     <ul th:if="${#fields.hasErrors('*')}" class="alert alert-danger">
         <li th:each="err: ${#fields.errors('*')}" th:text="${err}"></li>
